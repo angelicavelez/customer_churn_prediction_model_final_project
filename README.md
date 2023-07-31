@@ -10,3 +10,8 @@ incluyendo información sobre sus planes y contratos.
 - Evaluar la calidad del modelo con **AUC-ROC** como principal métrica.
 
 ## <img src="https://d30ql1y9posr4b.cloudfront.net/es-mex/tild3739-6666-4239-b032-623136613631__colordark.svg" width="120">
+
+
+## Requerimientos
+
+Revisa las librerías necesarias para este proyecto en el archivo [requirements](https://github.com/angelicavelez/customer_churn_prediction_model_final_project/blob/main/requirements.txt)
