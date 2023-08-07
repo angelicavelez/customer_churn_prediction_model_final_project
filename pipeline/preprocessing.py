@@ -50,7 +50,6 @@ def generate_customer_df(data_contract, data_internet, data_personal, data_phone
 
     return customers
 
-
 #====================================================================================================================
 
 
@@ -97,7 +96,6 @@ def X_y (customers):
     y = customers['churn_customer']
 
     return X, y
-
 
 #====================================================================================================================
 
@@ -180,7 +178,6 @@ def balanced_classes (X_train, y_train):
     X_train, y_train = ros.fit_resample(X_train, y_train)
 
     return X_train, y_train
-
 
 #====================================================================================================================
 
