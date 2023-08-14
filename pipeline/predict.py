@@ -13,3 +13,8 @@ def predict_model(model, X_train, y_train, X_valid, y_valid):
     return roc_auc_valid
 
 #====================================================================================================================
+#====================================================================================================================
+# REVISION KATLHYN REYES
+#====================================================================================================================
+# tu funcion cumple con el objetivo de evaluar un modelo entrenado en un conjunto de datos de validación y retornar la mejor puntuación ROC AUC. 
+

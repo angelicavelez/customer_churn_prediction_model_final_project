@@ -196,3 +196,34 @@ def processing (customers):
 
 
 #====================================================================================================================
+#====================================================================================================================
+# REVISION KATLHYN REYES
+#====================================================================================================================
+# el código actual en rename_columns para cambiar el nombre de las columnas esta muy bien, aunque podemos mejorarlo con un bucle para evitar repeticiones
+# mi porpuesta seria esta:
+# Esto reduce la duplicación de código y hace más flexible la función, pues permite utilizar cualquier cantidad de datos como argumentos.
+# def rename_columns(*data_frames):
+#     renamed_data_frames = []
+#     for df in data_frames:
+#         renamed_df = df.rename(columns=lambda x: to_snake_case(x))
+#         renamed_data_frames.append(renamed_df)
+#     return tuple(renamed_data_frames)
+
+#====================================================================================================================
+# En cuanto la función change_data_type y como lo abordaste esta perfecto,hubiera optado por el mismo desarrollo
+
+#====================================================================================================================
+# En el apartado donde combinas los 4 dataframes para obtener customers, podrías tener en cuenta trabajarlo de la siguiente forma:
+# customers = (data_contract.merge(data_personal, how='left', on='customerID')
+#              .merge(data_internet, how='left', on='customerID')
+#              .merge(data_phone, how='left', on='customerID'))
+
+#====================================================================================================================
+# Tu función de preprocessing esta prefectamente estructurado
+
+#====================================================================================================================
+# En tu apartado de Data processing
+# las funciones X_y, X_encoder, remove_features,split_data, scaler_data, balanced_classes, y processing
+# se encuentran perfectamente estructuradas y bien optimizadas. Felicitaciones!! :D.
+
+

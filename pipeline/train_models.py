@@ -248,3 +248,40 @@ def select_best_model(X_train, y_train, X_test, y_test):
     return model, score, summary_models
 
 #====================================================================================================================
+#====================================================================================================================
+# REVISION KATLHYN REYES
+#====================================================================================================================
+
+# El desarrollo de tu función para abordar el entrenamiento de modelos es muy agradable por los comentarios y ordenado. Felicitaciones.
+# En este caso, mi sugerencia es que se creen funciones para encapsular tareas repetitivas, como la del entrenamiento y evaluación de modelos.
+# Esto puede contribuir a que el código sea más claro y conciso.
+# Mi propuesta de mejora sería la siguiente
+
+# def select_best_model(X_train, y_train, X_test, y_test):
+#     print('Inicio del entrenamiento de modelos')
+#     score = 0
+#     summary_models = {}
+
+#     # Configuraciones del modelo y parameter grids
+#     model_configs = [
+#         (LogisticRegression, params_lr),
+#         (DecisionTreeClassifier, params_dt),
+#         (RandomForestClassifier, params_rf),
+#         (XGBClassifier, params_xgb),
+#         (LGBMClassifier, params_lgbm),
+#         (KNeighborsClassifier, params_knb),
+#         (MLPClassifier, params_mlp)
+#     ]
+
+#     # Bucle de entrenamiento
+#     for estimator, param_grid in model_configs:
+#         model, roc_auc = train_model(estimator, X_train, y_train, X_test, y_test, summary_models)
+#         if roc_auc > score:
+#             best_model = model
+#             score = roc_auc
+
+#     print(summary_models)
+#     print(f'\nBest model: "{get_name_model(best_model)}" roc_auc={score:.2f}\n')
+#     print('... executed training models.\n')
+
+#     return best_model, score, summary_models
